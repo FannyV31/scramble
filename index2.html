@@ -22,12 +22,33 @@
 <body>
  
 <div id="draggable" class="ui-widget-content">
-  <p>Drag me to my target</p>
+  <img src= "images/Blue copy/letter.png" width=100px; height=100px></img>
 </div>
   
 <div id="droppable" class="ui-widget-header">
   <p>Drop here</p>
 </div>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+
+<div id="droppable" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+
 <script>
 $( function() {
   $( "#draggable" ).draggable();
@@ -35,7 +56,7 @@ $( function() {
     drop: function( event, ui ) {
       $( this )
         .addClass( "ui-state-highlight" )
-        .find( "p" )
+        .find( "img" )
           .html( "Dropped!" );
     }
   });
